@@ -13,11 +13,10 @@ const theme = createMuiTheme({
       main: red[500] // ou main: '#f44336'
     },
     secondary: {
-      main: indigo[500] // ou main: '#3f51b5'
+      main: indigo[500]
     }
   }
 });
-
 
 function App() {
   return (

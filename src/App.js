@@ -1,6 +1,7 @@
 // estrutura = https://material-ui.com/customization/default-theme/
 // cores = https://material-ui.com/customization/color/#color
 // (theme) => {...} = https://material-ui.com/customization/theming/#theme-provider
+import React from "react";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 import { red, indigo, grey } from '@material-ui/core/colors';
@@ -24,10 +25,17 @@ const theme = createMuiTheme({
 });
 
 function App() {
+  const [open, setOpen] = React.useState(false);
+
+  const toggleDrawer = () => {
+    //setOpen((open) ? false : true);
+    setOpen(!open);
+  }
+
   return (
     <ThemeProvider theme={theme}>
-      <TopBar />
-      <DrawerNav />
+      <TopBar toggleDrawer={toggleDrawer} />
+      <DrawerNav toggleDrawer={toggleDrawer} openDrawer={open} />
       <Home />
     </ThemeProvider>
   );

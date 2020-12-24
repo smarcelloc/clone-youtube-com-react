@@ -1,6 +1,6 @@
 import {
   makeStyles,
-  Drawer,
+  SwipeableDrawer, // TouchScreen
   IconButton,
   Divider
 } from '@material-ui/core';
@@ -18,7 +18,8 @@ const useStyles = makeStyles(theme => ({
     width: drawerWidth
   },
   drawer: {
-    width: drawerWidth
+    width: drawerWidth,
+    flexShrink: 0
   },
   drawerHeader: {
     display: 'flex',
@@ -28,28 +29,31 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'flex-start',
   },
   logo: {
-    height: 26,
+    height: 25,
     paddingLeft: theme.spacing(1)
   }
 }));
 
 
-const toggleDrawer = () => {
+function DrawerNav(props) {
 
-}
-
-function DrawerNav() {
   const classes = useStyles();
   return (
-    <Drawer open className={classes.drawer} classes={{ paper: classes.drawerPaper }}>
+    <SwipeableDrawer
+      open={props.openDrawer}
+      className={classes.drawer}
+      onClose={props.toggleDrawer}
+      onOpen={props.toggleDrawer}
+      classes={{ paper: classes.drawerPaper }}
+    >
       <div className={classes.drawerHeader}>
-        <IconButton><MenuIcon /></IconButton>
+        <IconButton onClick={props.toggleDrawer}><MenuIcon /></IconButton>
         <img src="/images/logo.png" alt="Logotipo do Youtube" className={classes.logo} />
       </div>
       <Divider />
       <DrawerNavList />
       <Divider />
-    </Drawer>
+    </SwipeableDrawer>
   );
 }
 

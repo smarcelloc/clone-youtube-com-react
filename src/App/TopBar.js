@@ -34,12 +34,12 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function TopBar() {
+function TopBar(props) {
   const classes = useStyles();
   return (
     <AppBar position="fixed" color="inherit" className={classes.appBar}>
       <Toolbar>
-        <IconButton edge="start" className={classes.icons} color="inherit" aria-label="menu">
+        <IconButton onClick={props.toggleDrawer} edge="start" className={classes.icons} color="inherit" aria-label="menu">
           <MenuIcon />
         </IconButton>
 

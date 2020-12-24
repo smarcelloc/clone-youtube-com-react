@@ -218,7 +218,7 @@ function DrawerNavList() {
         </ListItem>
       </List>
 
-      <Box color={grey[500]} fontSize={12.5} padding={2}>&copy; 2020 Google LLC</Box>
+      <Box color={grey[600]} fontSize={12.5} padding={2}>&copy; 2020 Google LLC</Box>
     </div>
   );
 }

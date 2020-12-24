@@ -7,8 +7,11 @@ import {
   Divider,
   Button,
   ListSubheader,
-  Link
+  Link,
+  Box
 } from '@material-ui/core';
+
+import { grey } from '@material-ui/core/colors'
 
 import {
   AccountCircle as AccountCircleIcon,
@@ -98,14 +101,12 @@ function DrawerNavList() {
 
       <Divider />
 
-      <List dense>
-        <ListItem>Faça login para curtir vídeos, comentar e se inscrever.</ListItem>
-        <ListItem>
-          <Button variant="outlined" className={classes.btnLogin} startIcon={<AccountCircleIcon />} color="secondary">
-            Fazer login
-          </Button>
-        </ListItem>
-      </List>
+      <Box paddingLeft={2} paddingBottom={2}>
+        <p>Faça login para curtir vídeos, comentar e se inscrever.</p>
+        <Button variant="outlined" className={classes.btnLogin} startIcon={<AccountCircleIcon />} color="secondary">
+          Fazer login
+        </Button>
+      </Box>
 
       <Divider />
 
@@ -199,9 +200,9 @@ function DrawerNavList() {
           <Link className={classes.links} href="https://www.youtube.com/ads/">Publicidade</Link>
           <Link className={classes.links} href="https://developers.google.com/youtube">Desenvolvedores</Link>
         </ListItem>
+      </List>
 
-        <br />
-
+      <List dense>
         <ListItem>
           <Link className={classes.links} href="https://www.youtube.com/t/terms">Termos</Link>
           <Link className={classes.links} href="https://policies.google.com/privacy?hl=pt-BR">Privacidade</Link>
@@ -217,11 +218,7 @@ function DrawerNavList() {
         </ListItem>
       </List>
 
-      <List dense>
-        <ListItem>
-          <p className={classes.textFooter}>&copy; 2020 Google LLC</p>
-        </ListItem>
-      </List>
+      <Box color={grey[500]} fontSize={12.5} padding={2}>&copy; 2020 Google LLC</Box>
     </div>
   );
 }

@@ -28,9 +28,15 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'flex-start',
   },
   logo: {
-    height: 30,
+    height: 26,
+    paddingLeft: theme.spacing(1)
   }
 }));
+
+
+const toggleDrawer = () => {
+
+}
 
 function DrawerNav() {
   const classes = useStyles();

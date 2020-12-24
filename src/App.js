@@ -3,8 +3,10 @@
 // (theme) => {...} = https://material-ui.com/customization/theming/#theme-provider
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
-import { red, indigo } from '@material-ui/core/colors';
+import { red, indigo, grey } from '@material-ui/core/colors';
 
+import TopBar from './App/TopBar'
+import DrawerNav from './App/DrawerNav'
 import Home from './Home/Index'
 
 const theme = createMuiTheme({
@@ -14,13 +16,18 @@ const theme = createMuiTheme({
     },
     secondary: {
       main: indigo[500]
-    }
+    },
+    text: {
+      secondary: grey[700]
+    },
   }
 });
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <TopBar />
+      <DrawerNav />
       <Home />
     </ThemeProvider>
   );

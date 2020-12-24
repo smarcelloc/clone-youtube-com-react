@@ -1,6 +1,7 @@
 function Home() {
   return (
-    <div>OK</div>
+    <div>
+    </div>
   );
 }
 

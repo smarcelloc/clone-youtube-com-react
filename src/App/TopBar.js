@@ -4,7 +4,9 @@ import {
   Toolbar,
   IconButton,
   Button,
-  Tooltip
+  Tooltip,
+  Paper,
+  InputBase
 } from '@material-ui/core';
 
 import {
@@ -12,14 +14,12 @@ import {
   AccountCircle as AccountCircleIcon,
   VideoCall as VideoCallIcon,
   Apps as AppsIcon,
-  MoreVert as MoreVertIcon
+  MoreVert as MoreVertIcon,
+  Search as SearchIcon
 } from '@material-ui/icons';
 
 // theme -> App.js -> const const theme = createMuiTheme({ ... })
 const useStyles = makeStyles((theme) => ({
-  appBar: {
-    boxShadow: 'none'
-  },
   separador: {
     flexGrow: 1
   },
@@ -31,19 +31,45 @@ const useStyles = makeStyles((theme) => ({
   },
   btnLogin: {
     fontWeight: "500"
-  }
+  },
+  paper: {
+    display: 'flex',
+    alignItems: 'center',
+    width: '40%',
+    background: theme.palette.grey[50],
+  },
+  input: {
+    marginLeft: theme.spacing(1),
+    flex: 1,
+  },
+  iconButton: {
+    padding: 10,
+  },
 }));
 
 function TopBar(props) {
   const classes = useStyles();
   return (
-    <AppBar position="fixed" color="inherit" className={classes.appBar}>
+    <AppBar position="fixed" color="inherit">
       <Toolbar>
         <IconButton onClick={props.toggleDrawer} edge="start" className={classes.icons} color="inherit" aria-label="menu">
           <MenuIcon />
         </IconButton>
 
         <img src="/images/logo.png" alt="Logotipo do Youtube" className={classes.logo} />
+
+        <div className={classes.separador} />
+
+        <Paper component="form" className={classes.paper}>
+          <InputBase
+            className={classes.input}
+            placeholder="Pesquisar ..."
+            inputProps={{ 'aria-label': 'Pesquisar no Youtube ...' }}
+          />
+          <IconButton type="submit" className={classes.iconButton} aria-label="search">
+            <SearchIcon />
+          </IconButton>
+        </Paper>
 
         <div className={classes.separador} />
 

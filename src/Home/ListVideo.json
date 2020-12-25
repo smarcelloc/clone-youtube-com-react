@@ -1,0 +1,364 @@
+{
+  "video": [
+    {
+      "id": 1,
+      "thumb": "thumb1.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Feed de Postagens",
+      "channel": "Rodrigo Lima",
+      "views": "10 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 mês"
+    },
+    {
+      "id": 2,
+      "thumb": "thumb2.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Deploy e Open Source",
+      "channel": "Ricardo Júnior",
+      "views": "130 mil",
+      "avatar": "avatar.png",
+      "date": "há 3 mêses"
+    },
+    {
+      "id": 3,
+      "thumb": "thumb3.png",
+      "title": "COMO TURBINAR SEU JAVASCRIPT | Eslint prettier editorconfig vscode react.js",
+      "channel": "Vanessa Cristal",
+      "views": "5 mil",
+      "avatar": "avatar.png",
+      "date": "há 5 dias"
+    },
+    {
+      "id": 4,
+      "thumb": "thumb4.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Manipulando estados com React Context",
+      "channel": "Lucas Ferreira",
+      "views": "90 mil",
+      "avatar": "avatar.png",
+      "date": "há 4 semanas"
+    },
+    {
+      "id": 5,
+      "thumb": "thumb5.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Editor e Preview de novo Post",
+      "channel": "loucoDeProgramação",
+      "views": "80 mil",
+      "avatar": "avatar.png",
+      "date": "há 10 meses"
+    },
+    {
+      "id": 6,
+      "thumb": "thumb6.png",
+      "title": "REACT HOOKS COMO UTILIZAR NA PRÁTICA",
+      "channel": "ReactVIDA",
+      "views": "320 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 ano"
+    },
+    {
+      "id": 7,
+      "thumb": "thumb7.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Primeiros passos",
+      "channel": "ReactVIDA",
+      "views": "3 mil",
+      "avatar": "avatar.png",
+      "date": "há ontem"
+    },
+    {
+      "id": 8,
+      "thumb": "thumb8.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Git e Github",
+      "channel": "Lógica da programação",
+      "views": "520 mil",
+      "avatar": "avatar.png",
+      "date": "há 2 anos"
+    },
+    {
+      "id": 9,
+      "thumb": "thumb1.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Feed de Postagens",
+      "channel": "Rodrigo Lima",
+      "views": "10 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 mês"
+    },
+    {
+      "id": 10,
+      "thumb": "thumb2.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Deploy e Open Source",
+      "channel": "Ricardo Júnior",
+      "views": "130 mil",
+      "avatar": "avatar.png",
+      "date": "há 3 mêses"
+    },
+    {
+      "id": 11,
+      "thumb": "thumb3.png",
+      "title": "COMO TURBINAR SEU JAVASCRIPT | Eslint prettier editorconfig vscode react.js",
+      "channel": "Vanessa Cristal",
+      "views": "5 mil",
+      "avatar": "avatar.png",
+      "date": "há 5 dias"
+    },
+    {
+      "id": 12,
+      "thumb": "thumb4.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Manipulando estados com React Context",
+      "channel": "Lucas Ferreira",
+      "views": "90 mil",
+      "avatar": "avatar.png",
+      "date": "há 4 semanas"
+    },
+    {
+      "id": 13,
+      "thumb": "thumb5.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Editor e Preview de novo Post",
+      "channel": "loucoDeProgramação",
+      "views": "80 mil",
+      "avatar": "avatar.png",
+      "date": "há 10 meses"
+    },
+    {
+      "id": 14,
+      "thumb": "thumb6.png",
+      "title": "REACT HOOKS COMO UTILIZAR NA PRÁTICA",
+      "channel": "ReactVIDA",
+      "views": "320 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 ano"
+    },
+    {
+      "id": 15,
+      "thumb": "thumb7.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Primeiros passos",
+      "channel": "ReactVIDA",
+      "views": "3 mil",
+      "avatar": "avatar.png",
+      "date": "há ontem"
+    },
+    {
+      "id": 16,
+      "thumb": "thumb8.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Git e Github",
+      "channel": "Lógica da programação",
+      "views": "520 mil",
+      "avatar": "avatar.png",
+      "date": "há 2 anos"
+    },
+    {
+      "id": 17,
+      "thumb": "thumb1.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Feed de Postagens",
+      "channel": "Rodrigo Lima",
+      "views": "10 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 mês"
+    },
+    {
+      "id": 18,
+      "thumb": "thumb2.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Deploy e Open Source",
+      "channel": "Ricardo Júnior",
+      "views": "130 mil",
+      "avatar": "avatar.png",
+      "date": "há 3 mêses"
+    },
+    {
+      "id": 19,
+      "thumb": "thumb3.png",
+      "title": "COMO TURBINAR SEU JAVASCRIPT | Eslint prettier editorconfig vscode react.js",
+      "channel": "Vanessa Cristal",
+      "views": "5 mil",
+      "avatar": "avatar.png",
+      "date": "há 5 dias"
+    },
+    {
+      "id": 20,
+      "thumb": "thumb4.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Manipulando estados com React Context",
+      "channel": "Lucas Ferreira",
+      "views": "90 mil",
+      "avatar": "avatar.png",
+      "date": "há 4 semanas"
+    },
+    {
+      "id": 21,
+      "thumb": "thumb5.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Editor e Preview de novo Post",
+      "channel": "loucoDeProgramação",
+      "views": "80 mil",
+      "avatar": "avatar.png",
+      "date": "há 10 meses"
+    },
+    {
+      "id": 22,
+      "thumb": "thumb6.png",
+      "title": "REACT HOOKS COMO UTILIZAR NA PRÁTICA",
+      "channel": "ReactVIDA",
+      "views": "320 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 ano"
+    },
+    {
+      "id": 23,
+      "thumb": "thumb7.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Primeiros passos",
+      "channel": "ReactVIDA",
+      "views": "3 mil",
+      "avatar": "avatar.png",
+      "date": "há ontem"
+    },
+    {
+      "id": 24,
+      "thumb": "thumb8.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Git e Github",
+      "channel": "Lógica da programação",
+      "views": "520 mil",
+      "avatar": "avatar.png",
+      "date": "há 2 anos"
+    },
+    {
+      "id": 25,
+      "thumb": "thumb1.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Feed de Postagens",
+      "channel": "Rodrigo Lima",
+      "views": "10 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 mês"
+    },
+    {
+      "id": 26,
+      "thumb": "thumb2.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Deploy e Open Source",
+      "channel": "Ricardo Júnior",
+      "views": "130 mil",
+      "avatar": "avatar.png",
+      "date": "há 3 mêses"
+    },
+    {
+      "id": 27,
+      "thumb": "thumb3.png",
+      "title": "COMO TURBINAR SEU JAVASCRIPT | Eslint prettier editorconfig vscode react.js",
+      "channel": "Vanessa Cristal",
+      "views": "5 mil",
+      "avatar": "avatar.png",
+      "date": "há 5 dias"
+    },
+    {
+      "id": 28,
+      "thumb": "thumb4.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Manipulando estados com React Context",
+      "channel": "Lucas Ferreira",
+      "views": "90 mil",
+      "avatar": "avatar.png",
+      "date": "há 4 semanas"
+    },
+    {
+      "id": 29,
+      "thumb": "thumb5.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Editor e Preview de novo Post",
+      "channel": "loucoDeProgramação",
+      "views": "80 mil",
+      "avatar": "avatar.png",
+      "date": "há 10 meses"
+    },
+    {
+      "id": 30,
+      "thumb": "thumb6.png",
+      "title": "REACT HOOKS COMO UTILIZAR NA PRÁTICA",
+      "channel": "ReactVIDA",
+      "views": "320 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 ano"
+    },
+    {
+      "id": 31,
+      "thumb": "thumb7.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Primeiros passos",
+      "channel": "ReactVIDA",
+      "views": "3 mil",
+      "avatar": "avatar.png",
+      "date": "há ontem"
+    },
+    {
+      "id": 32,
+      "thumb": "thumb8.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Git e Github",
+      "channel": "Lógica da programação",
+      "views": "520 mil",
+      "avatar": "avatar.png",
+      "date": "há 2 anos"
+    },
+    {
+      "id": 33,
+      "thumb": "thumb1.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Feed de Postagens",
+      "channel": "Rodrigo Lima",
+      "views": "10 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 mês"
+    },
+    {
+      "id": 34,
+      "thumb": "thumb2.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Deploy e Open Source",
+      "channel": "Ricardo Júnior",
+      "views": "130 mil",
+      "avatar": "avatar.png",
+      "date": "há 3 mêses"
+    },
+    {
+      "id": 35,
+      "thumb": "thumb3.png",
+      "title": "COMO TURBINAR SEU JAVASCRIPT | Eslint prettier editorconfig vscode react.js",
+      "channel": "Vanessa Cristal",
+      "views": "5 mil",
+      "avatar": "avatar.png",
+      "date": "há 5 dias"
+    },
+    {
+      "id": 36,
+      "thumb": "thumb4.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Manipulando estados com React Context",
+      "channel": "Lucas Ferreira",
+      "views": "90 mil",
+      "avatar": "avatar.png",
+      "date": "há 4 semanas"
+    },
+    {
+      "id": 37,
+      "thumb": "thumb5.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Editor e Preview de novo Post",
+      "channel": "loucoDeProgramação",
+      "views": "80 mil",
+      "avatar": "avatar.png",
+      "date": "há 10 meses"
+    },
+    {
+      "id": 38,
+      "thumb": "thumb6.png",
+      "title": "REACT HOOKS COMO UTILIZAR NA PRÁTICA",
+      "channel": "ReactVIDA",
+      "views": "320 mil",
+      "avatar": "avatar.png",
+      "date": "há 1 ano"
+    },
+    {
+      "id": 39,
+      "thumb": "thumb7.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Primeiros passos",
+      "channel": "ReactVIDA",
+      "views": "3 mil",
+      "avatar": "avatar.png",
+      "date": "há ontem"
+    },
+    {
+      "id": 40,
+      "thumb": "thumb8.png",
+      "title": "CRIANDO UMA REDE SOCIAL DO ZERO | Git e Github",
+      "channel": "Lógica da programação",
+      "views": "520 mil",
+      "avatar": "avatar.png",
+      "date": "há 2 anos"
+    }
+  ]
+}

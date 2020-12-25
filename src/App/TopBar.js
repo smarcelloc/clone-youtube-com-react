@@ -7,7 +7,8 @@ import {
   Tooltip,
   Paper,
   InputBase,
-  Divider
+  Divider,
+  Hidden
 } from '@material-ui/core';
 
 import {
@@ -58,43 +59,64 @@ function TopBar(props) {
         <IconButton onClick={props.toggleDrawer} edge="start" className={classes.icons} color="inherit" aria-label="menu">
           <MenuIcon />
         </IconButton>
-
         <img src="/images/logo.png" alt="Logotipo do Youtube" className={classes.logo} />
 
         <div className={classes.separador} />
 
-        <Paper component="form" className={classes.paper}>
-          <InputBase
-            className={classes.input}
-            placeholder="Pesquisar ..."
-            inputProps={{ 'aria-label': 'Pesquisar no Youtube ...' }}
-          />
-          <IconButton type="submit" className={classes.iconButton} aria-label="search">
-            <SearchIcon />
-          </IconButton>
+        <Hidden xsDown>
+          <Paper component="form" className={classes.paper}>
+            <InputBase
+              className={classes.input}
+              placeholder="Pesquisar ..."
+              inputProps={{ 'aria-label': 'Pesquisar no Youtube ...' }}
+            />
+            <IconButton type="submit" className={classes.iconButton} aria-label="search">
+              <SearchIcon />
+            </IconButton>
 
-          <Divider orientation="vertical" flexItem />
+            <Hidden smDown>
+              <Divider orientation="vertical" flexItem />
 
-          <IconButton className={classes.iconButton} aria-label="teclado virtual">
-            <KeyboardIcon />
-          </IconButton>
-        </Paper>
+              <IconButton className={classes.iconButton} aria-label="teclado virtual">
+                <KeyboardIcon />
+              </IconButton>
+            </Hidden>
+          </Paper>
+        </Hidden>
 
         <div className={classes.separador} />
 
-        <Tooltip title="Criar">
-          <IconButton className={classes.icons} color="inherit" aria-label="Criar">
-            <VideoCallIcon />
-          </IconButton>
-        </Tooltip>
+        <Hidden smUp>
+          <Tooltip title="Pesquisar">
+            <IconButton className={classes.icons} color="inherit" aria-label="Pesquisar">
+              <SearchIcon />
+            </IconButton>
+          </Tooltip>
+        </Hidden>
 
-        <AppYouTube />
+        <Hidden smDown>
+          <Tooltip title="Criar">
+            <IconButton className={classes.icons} color="inherit" aria-label="Criar">
+              <VideoCallIcon />
+            </IconButton>
+          </Tooltip>
 
+          <AppYouTube />
+        </Hidden>
         <Configuration />
-
-        <Button variant="outlined" className={classes.btnLogin} startIcon={<AccountCircleIcon />} color="secondary">
-          Fazer login
-        </Button>
+        <Hidden smDown>
+          <Button variant="outlined" className={classes.btnLogin} startIcon={<AccountCircleIcon />} color="secondary">
+            Fazer login
+          </Button>
+        </Hidden>
+        <Hidden mdUp>
+          <IconButton
+            aria-label="account of current user"
+            color="secondary"
+          >
+            <AccountCircleIcon />
+          </IconButton>
+        </Hidden>
       </Toolbar>
     </AppBar>
   );

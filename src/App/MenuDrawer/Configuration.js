@@ -8,7 +8,8 @@ import {
   MenuItem,
   ListItemIcon,
   Typography,
-  Divider
+  Divider,
+  Hidden
 } from '@material-ui/core';
 
 import {
@@ -20,7 +21,9 @@ import {
   Feedback as FeedbackIcon,
   Brightness4 as Brightness4Icon,
   Language as LanguageIcon,
-  Translate as TranslateIcon
+  Translate as TranslateIcon,
+  Apps as AppsIcon,
+  VideoCall as VideoCallIcon
 } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
@@ -55,6 +58,21 @@ function Configuration() {
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
         transformOrigin={{ vertical: "bottom", horizontal: "right" }}
       >
+
+        <Hidden mdUp>
+          <MenuItem>
+            <ListItemIcon><VideoCallIcon /></ListItemIcon>
+            <Typography variant="inherit">Criar</Typography>
+          </MenuItem>
+
+          <MenuItem>
+            <ListItemIcon><AppsIcon /></ListItemIcon>
+            <Typography variant="inherit">Aplicativos do Youtube</Typography>
+          </MenuItem>
+
+          <Divider />
+        </Hidden>
+
         <MenuItem>
           <ListItemIcon><Brightness4Icon /></ListItemIcon>
           <Typography variant="inherit">Aparência: Claro</Typography>
@@ -91,12 +109,14 @@ function Configuration() {
           <Typography variant="inherit">Enviar feedback</Typography>
         </MenuItem>
 
-        <Divider />
+        <Hidden smDown>
+          <Divider />
 
-        <MenuItem>
-          <ListItemIcon><KeyboardIcon /></ListItemIcon>
-          <Typography variant="inherit">Atalhos do teclado</Typography>
-        </MenuItem>
+          <MenuItem>
+            <ListItemIcon><KeyboardIcon /></ListItemIcon>
+            <Typography variant="inherit">Atalhos do teclado</Typography>
+          </MenuItem>
+        </Hidden>
       </Menu>
     </div>
   );

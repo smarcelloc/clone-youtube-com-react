@@ -6,17 +6,20 @@ import {
   Button,
   Tooltip,
   Paper,
-  InputBase
+  InputBase,
+  Divider
 } from '@material-ui/core';
 
 import {
   Menu as MenuIcon,
   AccountCircle as AccountCircleIcon,
   VideoCall as VideoCallIcon,
-  Apps as AppsIcon,
-  MoreVert as MoreVertIcon,
+  Keyboard as KeyboardIcon,
   Search as SearchIcon
 } from '@material-ui/icons';
+
+import AppYouTube from "./MenuDrawer/AppYouTube";
+import Configuration from './MenuDrawer/Configuration';
 
 // theme -> App.js -> const const theme = createMuiTheme({ ... })
 const useStyles = makeStyles((theme) => ({
@@ -69,6 +72,12 @@ function TopBar(props) {
           <IconButton type="submit" className={classes.iconButton} aria-label="search">
             <SearchIcon />
           </IconButton>
+
+          <Divider orientation="vertical" flexItem />
+
+          <IconButton className={classes.iconButton} aria-label="teclado virtual">
+            <KeyboardIcon />
+          </IconButton>
         </Paper>
 
         <div className={classes.separador} />
@@ -79,17 +88,9 @@ function TopBar(props) {
           </IconButton>
         </Tooltip>
 
-        <Tooltip title="Aplicativo do Youtube">
-          <IconButton className={classes.icons} color="inherit" aria-label="Aplicativo do Youtube">
-            <AppsIcon />
-          </IconButton>
-        </Tooltip>
+        <AppYouTube />
 
-        <Tooltip title="Configuração">
-          <IconButton className={classes.icons} color="inherit" aria-label="Configuração">
-            <MoreVertIcon />
-          </IconButton>
-        </Tooltip>
+        <Configuration />
 
         <Button variant="outlined" className={classes.btnLogin} startIcon={<AccountCircleIcon />} color="secondary">
           Fazer login

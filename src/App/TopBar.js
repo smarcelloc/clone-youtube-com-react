@@ -99,7 +99,7 @@ function TopBar(props) {
 
         <Hidden smUp>
           <Tooltip title="Pesquisar">
-            <IconButton className={classes.icons} color="inherit" aria-label="Pesquisar">
+            <IconButton className={classes.icons} aria-label="Pesquisar">
               <SearchIcon />
             </IconButton>
           </Tooltip>

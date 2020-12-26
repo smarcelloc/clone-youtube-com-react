@@ -40,7 +40,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div style={{ background: theme.palette.background.paper }}>
+      <div style={{ background: theme.palette.background.paper, paddingTop: 60 }}>
         <TopBar toggleDrawer={toggleDrawer} darkMode={darkMode} setDarkMode={setDarkMode} />
         <DrawerNav toggleDrawer={toggleDrawer} openDrawer={open} />
         <Home />

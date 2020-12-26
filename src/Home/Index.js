@@ -16,7 +16,7 @@ function showLess(text, maxLength) {
 
 function Home() {
   return (
-    <Box marginTop="60px" padding={4}>
+    <Box padding={4}>
       <Typography component="h2" variant="h5" color="textPrimary" style={{ fontWeight: 'bold' }}>Recomendados</Typography>
       <Grid container spacing={4}>
         {listVideoJSON.video.map((item, index) => (

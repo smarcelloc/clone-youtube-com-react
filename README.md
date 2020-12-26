@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Clone Youtube com REACT JS
+Utilizar o ReactJS para clonar a página principal do Youtube.
+
+- [VER OUTRAS TELAS DO PROJETO](telas/)
+
+![Tela principal do REACTJS](telas/main-nav-min.png)
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -38,7 +38,7 @@ function AppYouTube() {
   return (
     <div>
       <Tooltip title="Aplicativo do Youtube" onClick={toggleMenuOpen} aria-controls="app-youtube-menu" aria-haspopup="true">
-        <IconButton className={classes.icons} color="inherit" aria-label="Aplicativo do Youtube">
+        <IconButton className={classes.icons} aria-label="Aplicativo do Youtube">
           <AppsIcon />
         </IconButton>
       </Tooltip>

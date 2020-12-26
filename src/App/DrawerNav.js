@@ -2,7 +2,8 @@ import {
   makeStyles,
   SwipeableDrawer, // TouchScreen
   IconButton,
-  Divider
+  Divider,
+  useTheme
 } from '@material-ui/core';
 
 import {
@@ -10,6 +11,7 @@ import {
 } from '@material-ui/icons';
 
 import DrawerNavList from './DrawerNavList'
+import { join } from 'path';
 
 const drawerWidth = 240;
 
@@ -36,8 +38,9 @@ const useStyles = makeStyles(theme => ({
 
 
 function DrawerNav(props) {
-
   const classes = useStyles();
+  const modoDark = useTheme().palette.type === 'dark';
+
   return (
     <SwipeableDrawer
       open={props.openDrawer}
@@ -48,7 +51,7 @@ function DrawerNav(props) {
     >
       <div className={classes.drawerHeader}>
         <IconButton onClick={props.toggleDrawer}><MenuIcon /></IconButton>
-        <img src="/images/logo.png" alt="Logotipo do Youtube" className={classes.logo} />
+        <img src={join('images', (modoDark ? 'logo-dark.png' : 'logo.png'))} alt="Logotipo do Youtube" className={classes.logo} />
       </div>
       <Divider />
       <DrawerNavList />

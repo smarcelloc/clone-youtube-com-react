@@ -8,7 +8,8 @@ import {
   Paper,
   InputBase,
   Divider,
-  Hidden
+  Hidden,
+  useTheme
 } from '@material-ui/core';
 
 import {
@@ -19,6 +20,8 @@ import {
   Search as SearchIcon
 } from '@material-ui/icons';
 
+import { grey } from '@material-ui/core/colors';
+import { join } from 'path';
 import AppYouTube from "./MenuDrawer/AppYouTube";
 import Configuration from './MenuDrawer/Configuration';
 
@@ -40,7 +43,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     width: '40%',
-    background: theme.palette.grey[50],
+    background: grey[50],
+  },
+  paperDark: {
+    display: 'flex',
+    alignItems: 'center',
+    width: '40%',
+    background: grey[700],
   },
   input: {
     marginLeft: theme.spacing(1),
@@ -53,18 +62,20 @@ const useStyles = makeStyles((theme) => ({
 
 function TopBar(props) {
   const classes = useStyles();
+  const modoDark = useTheme().palette.type === 'dark';
+
   return (
     <AppBar position="fixed" color="inherit">
       <Toolbar>
-        <IconButton onClick={props.toggleDrawer} edge="start" className={classes.icons} color="inherit" aria-label="menu">
+        <IconButton onClick={props.toggleDrawer} edge="start" className={classes.icons} aria-label="menu">
           <MenuIcon />
         </IconButton>
-        <img src="/images/logo.png" alt="Logotipo do Youtube" className={classes.logo} />
+        <img src={join('images', (modoDark ? 'logo-dark.png' : 'logo.png'))} alt="Logotipo do Youtube" className={classes.logo} />
 
         <div className={classes.separador} />
 
         <Hidden xsDown>
-          <Paper component="form" className={classes.paper}>
+          <Paper component="form" className={(modoDark) ? classes.paperDark : classes.paper}>
             <InputBase
               className={classes.input}
               placeholder="Pesquisar ..."
@@ -96,14 +107,14 @@ function TopBar(props) {
 
         <Hidden smDown>
           <Tooltip title="Criar">
-            <IconButton className={classes.icons} color="inherit" aria-label="Criar">
+            <IconButton className={classes.icons} aria-label="Criar">
               <VideoCallIcon />
             </IconButton>
           </Tooltip>
 
           <AppYouTube />
         </Hidden>
-        <Configuration />
+        <Configuration darkMode={props.darkMode} setDarkMode={props.setDarkMode} />
         <Hidden smDown>
           <Button variant="outlined" className={classes.btnLogin} startIcon={<AccountCircleIcon />} color="secondary">
             Fazer login

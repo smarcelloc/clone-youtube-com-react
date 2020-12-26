@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function Configuration() {
+function Configuration({ darkMode, setDarkMode }) {
   const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -44,7 +44,7 @@ function Configuration() {
   return (
     <div>
       <Tooltip title="Configuração" onClick={toggleMenuOpen} aria-controls="configuration" aria-haspopup="true">
-        <IconButton className={classes.icons} color="inherit" aria-label="Configuração do Youtube">
+        <IconButton className={classes.icons} aria-label="Configuração do Youtube">
           <MoreVertIcon />
         </IconButton>
       </Tooltip>
@@ -73,9 +73,9 @@ function Configuration() {
           <Divider />
         </Hidden>
 
-        <MenuItem>
+        <MenuItem onClick={() => setDarkMode(!darkMode)}>
           <ListItemIcon><Brightness4Icon /></ListItemIcon>
-          <Typography variant="inherit">Aparência: Claro</Typography>
+          <Typography variant="inherit">Aparência: {darkMode ? 'Escuro' : 'Claro'}</Typography>
         </MenuItem>
 
         <MenuItem>
